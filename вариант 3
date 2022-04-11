@@ -1,0 +1,20 @@
+не до конца сделана
+
+##
+var n := ReadlnInteger('Введите количество чисел >>');
+var a,b,min: integer;
+var k := 0;
+min:=0;
+for var i := 1 to n do
+begin
+  readln(a);
+  if (1344 mod a = 0) then 
+    begin
+    k += 1;
+    Println('Делитель обнаружен!>>',a);
+    min:=a;
+    if (min > a) then min:=a;
+    Println('min=',min);
+    end; 
+end;
+Println('Количество чисел >>', k);

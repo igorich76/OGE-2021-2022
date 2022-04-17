@@ -1,0 +1,11 @@
+##
+// вариант №10 Сдам ГИА
+var n:=ReadInteger('Введите длину последовательности >>');
+var s:=0;
+var a:integer;
+for var i:=1 to n do
+  begin
+  Read(a);
+  if (a mod 10 = 4) then s+=a;
+  end;
+Print(s);

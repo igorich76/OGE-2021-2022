@@ -1,0 +1,12 @@
+program var_15;
+var n,a,s,i:integer;
+begin
+Read(n);
+s:=0;
+for i:=1 to n do
+  begin
+    Read(a);
+    if (a mod 6 = 0) and (a mod 10 = 4) then s+=1;
+  end;
+Write(s);
+end.

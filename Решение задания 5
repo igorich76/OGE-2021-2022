@@ -1,0 +1,6 @@
+##
+var a := ReadlnInteger('Введите начальное число:');
+var b := ReadlnInteger('Введите конечное число:');
+var x := ReadlnInteger('Введите подставное число:');
+var c := (((((a*3)+x)*3)+x)*3); //здесь нужно аккуратно всё внести!
+if (c = b) then Print(c) else Print('пока не то! Получилось',c);

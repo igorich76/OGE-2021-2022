@@ -1,0 +1,8 @@
+##
+uses school;
+var a := Digits(110110); //возвращает List - список
+a.Println;
+var cnt:=0;
+for var i:=0 to a.Count-1 do      // проход по списку
+  if a[i] = 1 then cnt += a[i];
+Print(cnt);

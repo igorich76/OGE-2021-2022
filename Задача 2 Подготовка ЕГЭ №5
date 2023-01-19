@@ -7,11 +7,11 @@ var cnt := 0; //счётчик для суммы цифр
 for var i := 1 to Length(a) do
   if (a[i] = '1') then cnt += 1;
 Println('Сумма цифр двоичного числа1:', cnt);
-a := a + (cnt mod 2); Println(a); // дозапись справа
+a += (cnt mod 2); Println(a); // дозапись справа
 cnt := 0;
 for var i := 1 to Length(a) do
   if (a[i] = '1') then cnt += 1;
 Println('Сумма цифр двоичного числа2:', cnt);
-a := a + (cnt mod 2); Println(a); //дозапись справа
+a += (cnt mod 2); Println(a); //дозапись справа
 var num2 := Dec(a, 2);
 Println('Возврат в десятичную запись', num2);

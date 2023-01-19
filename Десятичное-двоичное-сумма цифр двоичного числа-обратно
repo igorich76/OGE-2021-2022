@@ -1,0 +1,11 @@
+##
+uses school;
+var num := ReadlnInteger('Введите целое число:');
+var a := ToBase(num,2);
+Println('Двоичная запись:',a);
+var cnt:=0;
+for var i:=1 to Length(a) do
+  if a[i]='1' then cnt +=1;
+Println('Сумма цифр двоичного числа:',cnt);
+var num2 := Dec(a,2);
+Println('Возврат в десятичную запись',num2);

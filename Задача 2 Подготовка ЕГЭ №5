@@ -15,3 +15,27 @@ Println('Сумма цифр двоичного числа2:', cnt);
 a += cnt mod 2; Println(a); //дозапись справа
 var num2 := Dec(a, 2);
 Println('Возврат в десятичную запись', num2);
+///////======решение на Питоне=======///////
+# num1 = int(input('Введите начальное число: '))
+
+def getsum(bin1):
+    sum0 = 0
+    del0 = 0
+
+    for bit in bin1:
+        sum0 += int(bit)
+
+    del0 = sum0 % 2
+
+    sum = str(bin1) + str(bin(del0)[2:])
+
+    return sum
+
+
+for num1 in range(0, 100):
+    bin1 = bin(num1)[2:]
+    sum = getsum(getsum(bin1))
+
+    if int(sum, 2) >= 97:
+        print(int(sum, 2))
+        break

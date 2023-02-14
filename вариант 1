@@ -15,3 +15,14 @@ begin
     then k += 1;
 end;
 Println('Количество чисел >>', k);
+//// а можно так:
+##
+var n := ReadlnInteger('Введите количество чисел >>');
+var k := 0;
+for var i := 1 to n do
+begin
+  var a := ReadlnInteger; // инициализация переменной в цикле
+  if (2020 mod a = 0) and (a <> 2020)
+    then k += 1;
+end;
+Println('Количество чисел >>', k);

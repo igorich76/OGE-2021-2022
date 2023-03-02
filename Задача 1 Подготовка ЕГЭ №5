@@ -1,0 +1,18 @@
+## //задача №1 (Шурыгина)
+uses school;
+
+var num := ReadlnInteger('Введите целое число:');
+var a := ToBase(num, 2); Println('Двоичная запись:', a);
+var cnt := 0; //счётчик для суммы цифр
+for var i := 1 to Length(a) do
+  if (a[i] = '1') then cnt += 1;
+Println('Сумма цифр двоичного числа1:', cnt);
+var b := cnt mod 2; Println('Остаток от дел суммы на 2>>', b);
+a += cnt mod 2; Println(a); // дозапись справа
+cnt := 0;
+for var i := 1 to Length(a) do
+  if (a[i] = '1') then cnt += 1;
+Println('Сумма цифр двоичного числа1:', cnt);
+a += cnt mod 2; Println(a); // ещё дозапись справа
+var num2 := Dec(a, 2);
+Println('Возврат в десятичную запись', num2);

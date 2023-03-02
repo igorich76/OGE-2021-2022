@@ -3,11 +3,16 @@ uses school;
 {var a := ReadlnInteger('Введите число>>');
 Println('Десятичная запись',a);
 var b := ToBase(a,2);
-Println('Двоичная запись>>',b);
+Println('2-ная запись>>',b);
 var c := Dec(b, 2);
 Println('Обратно>>',c);}
-var d := ReadlnInteger('Введите число>>');
+{var d := ReadlnInteger('Введите число>>');
 var e := ToBase(d,8);
-Println('Восьмеричная запись>>',e);
+Println('8-ная запись>>',e);
 var f := Dec(e, 8);
-Println('Обратно>>',f);
+Println('Обратно>>',f);}
+var g := ReadlnInteger('Введите число>>');
+var h := ToBase(g,16);
+Println('16-ная запись>>',h);
+var j := Dec(h, 16);
+Println('Обратно>>',j);

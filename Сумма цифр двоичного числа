@@ -6,3 +6,13 @@ var cnt:=0;
 for var i:=0 to a.Count-1 do      // проход по списку
   if a[i] = 1 then cnt += a[i];
 Print(cnt);
+/////////=====или так ======//////
+##
+uses school;
+var Число := ReadInteger('Введите двоичное число:');
+var a := Digits(Число); //возвращает List - список
+a.Println;
+var cnt:=0;
+for var i:=0 to a.Count-1 do      // проход по списку
+  if a[i] = 1 then cnt += a[i];
+Print(cnt);
